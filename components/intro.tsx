@@ -10,7 +10,7 @@ import { HiDownload } from 'react-icons/hi';
 
 export default function Intro() {
 	return (
-		<section className="mb-28 max-w-[40rem] text-center sm:mb-0 ">
+		<section className="mb-28 max-w-[40rem] text-center sm:mb-0 select-none">
 			<div className="flex items-center justify-center">
 				<div className="relative">
 					<motion.div
@@ -26,10 +26,11 @@ export default function Intro() {
 							quality="95"
 							priority={true}
 							className="h-24 w-24 object-cover rounded-full border-[0.35rem] border-white shadow-xl "
+							draggable={false}
 						/>
 					</motion.div>
 					<motion.span
-						className="absolute bottom-0 right-0 text-2xl "
+						className="absolute bottom-0 right-0 text-2xl"
 						initial={{ opacity: 0, scale: 0 }}
 						animate={{ opacity: 1, scale: 1 }}
 						transition={{
@@ -67,6 +68,7 @@ export default function Intro() {
 					className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 hover:bg-gray-950	sm:hover:translate-x-[-1rem] active:scale-105 
 					sm:active:translate-x-[-0.5rem]
 					transition group"
+					draggable={false}
 				>
 					Contact me Here{' '}
 					<BsArrowRight
@@ -80,6 +82,7 @@ export default function Intro() {
 					className="bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full hover:scale-110 hover:bg-gray-300	sm:hover:translate-x-[1rem] active:scale-105 sm:active:translate-x-[0.5rem] transition group cursor-pointer border border-black/10"
 					href="/My Resume.pdf"
 					download={true}
+					draggable={false}
 				>
 					Download Resume{' '}
 					<HiDownload
