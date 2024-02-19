@@ -65,7 +65,8 @@ export default function Intro() {
 			>
 				<Link
 					href="#contact"
-					className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 hover:bg-gray-950	sm:hover:translate-x-[-1rem] active:scale-105 
+					className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none 
+					hover:scale-110 hover:bg-gray-950	sm:hover:translate-x-[-1rem] active:scale-105 
 					sm:active:translate-x-[-0.5rem]
 					transition group"
 					draggable={false}
