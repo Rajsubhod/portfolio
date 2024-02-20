@@ -1,7 +1,7 @@
 import About from '@/components/about';
 import Intro from '@/components/intro';
-import Projects from '@/components/project';
-import SectionDivider from '@/components/section_divider';
+import Projects from '@/components/project-list';
+import SectionDivider from '@/components/section-divider';
 
 export default function Home() {
 	return (
