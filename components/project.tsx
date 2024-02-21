@@ -31,8 +31,8 @@ export default function Project({
 			ref={ref}
 			style={{ scale: scaleProgress, opacity: opacityProgress }}
 		>
-			<section className=" rounded-lg bg-gray-200 hover:bg-gray-300 transition max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem]">
-				<div className="pt-4 pb-8 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[20rem] ">
+			<section className=" rounded-lg bg-gray-200 hover:bg-gray-300 transition max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] select-none">
+				<div className="pt-4 pb-8 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flec-wrap flex-col h-full group-even:ml-[20rem] ">
 					<h3 className="text-2xl font-semibold">{title}</h3>
 					<p className="mt-2 leading-relaxed text-gray-700">{description}</p>
 					<ul className="flex flex-wrap gap-2 mt-4 sm:mt-auto">
