@@ -10,7 +10,10 @@ import { HiDownload } from 'react-icons/hi';
 
 export default function Intro() {
 	return (
-		<section className="mb-28 max-w-[40rem] text-center sm:mb-0 select-none">
+		<section
+			className="mb-28 max-w-[40rem] text-center sm:mb-0 select-none scroll-m-[100rem]"
+			id="home"
+		>
 			<div className="flex items-center justify-center">
 				<div className="relative">
 					<motion.div
@@ -66,7 +69,7 @@ export default function Intro() {
 				<Link
 					href="#contact"
 					className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none 
-					hover:scale-110 hover:bg-gray-950	sm:hover:translate-x-[-1rem] active:scale-105 
+					sm:hover:scale-110 hover:bg-gray-950 	sm:hover:translate-x-[-1rem] active:scale-90 sm:active:scale-105 
 					sm:active:translate-x-[-0.5rem]
 					transition group"
 					draggable={false}
@@ -80,7 +83,7 @@ export default function Intro() {
 				</Link>
 
 				<a
-					className="bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full hover:scale-110 hover:bg-gray-300	sm:hover:translate-x-[1rem] active:scale-105 sm:active:translate-x-[0.5rem] transition group cursor-pointer border border-black/10"
+					className="bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full sm:hover:scale-110 hover:bg-gray-300	sm:hover:translate-x-[1rem] active:scale-90 sm:active:scale-105 sm:active:translate-x-[0.5rem] transition group cursor-pointer border border-black/10"
 					href="/My Resume.pdf"
 					download={true}
 					draggable={false}
