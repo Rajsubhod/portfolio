@@ -20,7 +20,7 @@ export const Header = () => {
 				<ul className="flex flex-row flex-wrap w-[22rem] items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5 ">
 					{links.map((link) => (
 						<motion.li
-							className="h-3/4 flex items-center justify-center  "
+							className="h-3/4 flex items-center justify-center relative "
 							key={link.hash}
 							initial={{ y: -100, opacity: 0 }}
 							animate={{ y: 0, opacity: 1 }}
@@ -31,8 +31,20 @@ export const Header = () => {
 									{ 'text-gray-950': activeSection === link.name }
 								)}
 								href={link.hash}
+								onClick={() => setActiveSection(link.name)}
 							>
 								{link.name}
+								{link.name === activeSection && (
+									<motion.span
+										className="bg-gray-200 rounded-full absolute inset-0 -z-10"
+										layoutId="activaSection"
+										transition={{
+											type: 'spring',
+											stiffness: 380,
+											damping: 30,
+										}}
+									></motion.span>
+								)}
 							</Link>
 						</motion.li>
 					))}
