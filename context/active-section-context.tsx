@@ -7,6 +7,8 @@ type SectionName = (typeof links)[number]['name'];
 type ActiveSectionContextType = {
 	activeSection: SectionName;
 	setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
+	timeofLastClick: number;
+	setTimeofLastClick: React.Dispatch<React.SetStateAction<number>>;
 };
 
 export const ActiveSectionContext =
@@ -18,9 +20,17 @@ export default function ActiveSectionContextProvider({
 	children: React.ReactNode;
 }) {
 	const [activeSection, setActiveSection] = useState<SectionName>('Home');
+	const [timeofLastClick, setTimeofLastClick] = useState<number>(0);
 
 	return (
-		<ActiveSectionContext.Provider value={{ activeSection, setActiveSection }}>
+		<ActiveSectionContext.Provider
+			value={{
+				activeSection,
+				setActiveSection,
+				timeofLastClick,
+				setTimeofLastClick,
+			}}
+		>
 			{children}
 		</ActiveSectionContext.Provider>
 	);
