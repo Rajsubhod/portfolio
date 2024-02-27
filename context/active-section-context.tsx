@@ -1,15 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { links } from '@/lib/data';
-
-type SectionName = (typeof links)[number]['name'];
-type ActiveSectionContextType = {
-	activeSection: SectionName;
-	setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
-	timeofLastClick: number;
-	setTimeofLastClick: React.Dispatch<React.SetStateAction<number>>;
-};
+import type { SectionName, ActiveSectionContextType } from '@/lib/types';
 
 export const ActiveSectionContext =
 	React.createContext<ActiveSectionContextType | null>(null);
