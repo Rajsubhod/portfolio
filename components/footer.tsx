@@ -8,8 +8,8 @@ const Footer = () => {
 			</small>
 			<p className="text-xs">
 				<span className="font-semibold">About this website:</span> built with
-				Next.js, Tailwind CSS, TypeScript, Framer Motion, React-Email,
-				ResendFormik, Yup and more.
+				Next.js, Tailwind CSS, TypeScript, Framer Motion, React-Email, Resend,
+				Formik, Yup and more.
 			</p>
 		</footer>
 	);
