@@ -21,15 +21,21 @@ export default function ThemeContextProvider({
 	const toggleTheme = () => {
 		if (theme === 'light') {
 			setTheme('dark');
+			window.localStorage.setItem('theme', 'dark');
 			document.documentElement.classList.add('dark');
 		} else {
 			setTheme('light');
+			window.localStorage.setItem('theme', 'light');
 			document.documentElement.classList.remove('dark');
 		}
 	};
 
 	useEffect(() => {
-		if (
+		const localTheme = window.localStorage.getItem('theme') as Theme | null;
+		if (localTheme) {
+			setTheme(localTheme);
+			document.documentElement.classList.add(localTheme);
+		} else if (
 			window.matchMedia &&
 			window.matchMedia('(prefers-color-scheme: dark)').matches
 		) {
