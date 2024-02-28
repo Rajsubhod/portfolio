@@ -30,11 +30,11 @@ export default function Skills() {
 		>
 			<SectionHeading>My Skills</SectionHeading>
 
-			<div className=" ml-1 sm:m-0 w-[110%] sm:w-[55rem] h-[23rem] sm:h-[15rem] bg-gray-200 -z-10 mt-12 rounded-lg sm:rounded-full blur-2xl absolute  top-0 -left-4 "></div>
+			<div className=" ml-1 sm:m-0 w-[110%] sm:w-[55rem] h-[23rem] sm:h-[15rem] bg-gray-200 -z-10 mt-12 rounded-lg sm:rounded-full blur-2xl absolute  top-0 -left-4 dark:bg-gray-800 "></div>
 			<ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
 				{skillsData.map((skill, index) => (
 					<motion.li
-						className="bg-white border border-black/[0,1] rounded-xl px-5 py-3 "
+						className="bg-white border border-black/[0.1] rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 "
 						key={index}
 						variants={fadeInAnimationVariants}
 						initial="intial"

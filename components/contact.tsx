@@ -25,7 +25,7 @@ export default function Contact() {
 			viewport={{ once: true }}
 		>
 			<SectionHeading>Contact Me</SectionHeading>
-			<p className="text-gray-700">
+			<p className="text-gray-700 dark:text-white/80">
 				Please contact me directly at{' '}
 				<a className="underline" href="mailto:rajdeepmukherjee2002@gmail.com">
 					rajdeepmukherjee2002@gmail.com
@@ -56,9 +56,12 @@ export default function Contact() {
 				}}
 			>
 				{(formik) => (
-					<form className="mt-10 flex flex-col" onSubmit={formik.handleSubmit}>
+					<form
+						className="mt-10 flex flex-col dark:text-black"
+						onSubmit={formik.handleSubmit}
+					>
 						<input
-							className="h-14 px-4 rounded-lg borderBlack  "
+							className="h-14 px-4 rounded-lg borderBlack bg-white  dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none dark:placeholder-slate-800"
 							type="email"
 							placeholder="Your Email"
 							disabled={formik.isSubmitting}
@@ -72,7 +75,7 @@ export default function Contact() {
 							</div>
 						) : null}
 						<textarea
-							className="h-52 my-3 rounded-lg borderBlack p-4 resize-none"
+							className="h-52 my-3 rounded-lg borderBlack p-4 resize-none bg-white  dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none dark:placeholder-slate-800"
 							placeholder="Your Message"
 							maxLength={255}
 							disabled={formik.isSubmitting}
@@ -88,7 +91,8 @@ export default function Contact() {
 							<button
 								className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all hover:scale-110 hover:bg-gray-950 focus:bg-gray-950
 								disabled:bg-gray-600
-								disabled:cursor-not-allowed disabled:hover:scale-100 disabled:active:scale-100"
+								disabled:cursor-not-allowed disabled:hover:scale-100 disabled:active:scale-100
+								dark:bg-white dark:bg-opacity-10"
 								type="submit"
 								disabled={formik.isSubmitting}
 							>
