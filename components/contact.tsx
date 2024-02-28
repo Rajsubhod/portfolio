@@ -57,6 +57,7 @@ export default function Contact() {
 							className="h-14 px-4 rounded-lg borderBlack  "
 							type="email"
 							placeholder="Your Email"
+							disabled={formik.isSubmitting}
 							// required
 							maxLength={50}
 							{...formik.getFieldProps('senderEmail')}
@@ -70,6 +71,7 @@ export default function Contact() {
 							className="h-52 my-3 rounded-lg borderBlack p-4 resize-none"
 							placeholder="Your Message"
 							maxLength={255}
+							disabled={formik.isSubmitting}
 							{...formik.getFieldProps('message')}
 						/>
 						{formik.touched.message && formik.errors.message ? (
@@ -87,6 +89,9 @@ export default function Contact() {
 								Submit{' '}
 								<FaPaperPlane className="text-xs opacity-70 transition-all group-hover: translate-x-1 group-hover:-translate-y-1 " />{' '}
 							</button>
+							{formik.isSubmitting && (
+								<Rings color="black" radius={5} ariaLabel="submitting" />
+							)}
 						</div>
 					</form>
 				)}
