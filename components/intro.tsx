@@ -8,9 +8,12 @@ import Rajdeep from '@/public/Rajdeep.jpeg';
 import { BsArrowRight } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Intro() {
 	const { ref } = useSectionInView({ sectionName: 'Home', threshold: 0.5 });
+
+	const { setActiveSection, setTimeofLastClick } = useActiveSectionContext();
 	return (
 		<section
 			ref={ref}
@@ -76,6 +79,10 @@ export default function Intro() {
 					sm:active:translate-x-[-0.5rem]
 					transition group"
 					draggable={false}
+					onClick={(e) => {
+						setActiveSection('Contact');
+						setTimeofLastClick(Date.now());
+					}}
 				>
 					Contact me Here{' '}
 					<BsArrowRight
