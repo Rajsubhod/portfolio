@@ -93,7 +93,7 @@ export default function Intro() {
 				</Link>
 
 				<a
-					className="bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full sm:hover:scale-110 hover:bg-gray-300	sm:hover:translate-x-[1rem] active:scale-90 sm:active:scale-105 sm:active:translate-x-[0.5rem] transition group cursor-pointer border border-black/10"
+					className="bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full sm:hover:scale-110 hover:bg-gray-300	sm:hover:translate-x-[1rem] active:scale-90 sm:active:scale-105 sm:active:translate-x-[0.5rem] transition group cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/30 "
 					href="/My Resume.pdf"
 					download={true}
 					draggable={false}
