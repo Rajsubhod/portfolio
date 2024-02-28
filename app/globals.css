@@ -7,5 +7,5 @@ html {
 }
 
 .borderBlack {
-	@apply border border-black/50 outline-1 outline-black;
+	@apply border border-black/50 outline-1 !outline-black focus:outline-none;
 }
