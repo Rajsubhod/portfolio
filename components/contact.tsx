@@ -9,6 +9,7 @@ import { sendEmail } from '@/actions/sendEmail';
 import { Formik } from 'formik';
 import * as yup from 'yup';
 import { Rings } from 'react-loader-spinner';
+import toast from 'react-hot-toast';
 
 export default function Contact() {
 	const { ref } = useSectionInView({ threshold: 0.5, sectionName: 'Contact' });
@@ -45,10 +46,13 @@ export default function Contact() {
 				})}
 				onSubmit={(values, actions) => {
 					setTimeout(() => {
-						sendEmail({ values });
+						// console.log(values);
+						sendEmail({ values })
+							.then((res) => toast.success(res))
+							.catch((err) => toast.error(err.message));
 						actions.setSubmitting(false);
 						actions.resetForm();
-					}, 1500);
+					}, 3000);
 				}}
 			>
 				{(formik) => (
@@ -82,12 +86,18 @@ export default function Contact() {
 
 						<div className="flex justify-left items-center gap-2">
 							<button
-								className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all hover:scale-110 hover:bg-gray-950 focus:bg-gray-950 active:scale-105"
+								className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all hover:scale-110 hover:bg-gray-950 focus:bg-gray-950
+								disabled:bg-gray-600
+								disabled:cursor-not-allowed disabled:hover:scale-100 disabled:active:scale-100"
 								type="submit"
 								disabled={formik.isSubmitting}
 							>
 								Submit{' '}
-								<FaPaperPlane className="text-xs opacity-70 transition-all group-hover: translate-x-1 group-hover:-translate-y-1 " />{' '}
+								<FaPaperPlane
+									className="text-xs opacity-70 transition-all group-hover: translate-x-1 group-hover:-translate-y-1 
+						            disabled:group-hover:-translate-x-2 disabled:group-hover:translate-y-2
+								 "
+								/>{' '}
 							</button>
 							{formik.isSubmitting && (
 								<Rings color="black" radius={5} ariaLabel="submitting" />
