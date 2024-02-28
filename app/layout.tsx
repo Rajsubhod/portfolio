@@ -4,6 +4,7 @@ import './globals.css';
 import Header from '@/components/header';
 import ActiveSectionContextProvider from '@/context/active-section-context';
 import Footer from '@/components/footer';
+import { ToastContainer } from 'react-toastify';
 
 const inter = Inter({ subsets: ['latin'] });
 
