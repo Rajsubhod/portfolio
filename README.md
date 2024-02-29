@@ -1,8 +1,8 @@
 # Portfolio Website
 
-This is a [Next.js](https://nextjs.org/) portfolio project made using
-
-<img width="20px" style="padding-right:5px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png?size=48" />
+This is a [Next.js](https://nextjs.org/) portfolio project made using <br/>
+<br/>
+<img width="20px" style="padding-right:5px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png?size=48" /> 
 <img width="20px" style="padding-right:5px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png?size=48" />
 <img width="22px" style="padding-right:2px; margin-bottom: -1px" src="https://avatars.githubusercontent.com/u/109384852?s=48&v=4" />
 <img width="25px" style="padding-right: -2px; margin-bottom: -2px" src="https://camo.githubusercontent.com/9771a2d4a7366d3c6d4793e17104eba9e88f0aec82f7165bfe6871455c26cb2c/68747470733a2f2f6173736574732e76657263656c2e636f6d2f696d6167652f75706c6f61642f76313636323133303535392f6e6578746a732f49636f6e5f6461726b5f6261636b67726f756e642e706e67" />
