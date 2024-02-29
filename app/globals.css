@@ -11,5 +11,5 @@ html.dark {
 }
 
 .borderBlack {
-	@apply border border-black/50 outline-1 !outline-black focus:outline-none;
+	@apply border border-black/50 outline-1 focus:outline-none;
 }

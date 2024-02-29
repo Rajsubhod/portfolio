@@ -18,8 +18,8 @@ export const sendEmail = async (formData: dataType) => {
 
 	const { error } = await resend.emails.send({
 		from: 'www.rejeo.wiki <onboarding@resend.dev>',
-		to: ['rajdeepmukherjee721@gmail.com'],
-		subject: 'Hello, World!',
+		to: ['rajdeepmukherjee2002@gmail.com'],
+		subject: 'Reaching Out',
 		// text: message,
 		react: React.createElement(ContactFormEmail, {
 			message,

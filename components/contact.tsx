@@ -10,9 +10,12 @@ import { Formik } from 'formik';
 import * as yup from 'yup';
 import { Rings } from 'react-loader-spinner';
 import toast from 'react-hot-toast';
+import clsx from 'clsx';
+import { useTheme } from '@/context/theme-context';
 
 export default function Contact() {
 	const { ref } = useSectionInView({ threshold: 0.5, sectionName: 'Contact' });
+	const { theme } = useTheme();
 
 	return (
 		<motion.section
@@ -61,7 +64,12 @@ export default function Contact() {
 						onSubmit={formik.handleSubmit}
 					>
 						<input
-							className="h-14 px-4 rounded-lg borderBlack bg-white  dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none dark:placeholder-slate-800"
+							className={clsx(
+								'h-14 px-4 rounded-lg borderBlack bg-white  dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none dark:placeholder-slate-800',
+								{
+									'!outline-black': theme !== 'dark',
+								}
+							)}
 							type="email"
 							placeholder="Your Email"
 							disabled={formik.isSubmitting}
@@ -75,7 +83,12 @@ export default function Contact() {
 							</div>
 						) : null}
 						<textarea
-							className="h-52 my-3 rounded-lg borderBlack p-4 resize-none bg-white  dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none dark:placeholder-slate-800"
+							className={clsx(
+								'h-52 my-3 rounded-lg borderBlack p-4 resize-none bg-white  dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none dark:placeholder-slate-800',
+								{
+									'!outline-black': theme !== 'dark',
+								}
+							)}
 							placeholder="Your Message"
 							maxLength={255}
 							disabled={formik.isSubmitting}
