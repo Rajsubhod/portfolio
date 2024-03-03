@@ -64,9 +64,9 @@ export default function Intro() {
 					{' '}
 					Full Stack Developer with a passion for React and Springboot.{' '}
 				</span>{' '}
-				<span>Currently exploring the field of AI and LLMs</span>
+				<span>Currently exploring the field of AI and ML</span>
 			</motion.h1>
-
+			s
 			<motion.div
 				className="flex gap-2 items-center justify-center flex-col sm:flex-row px-4 text-lg font-medium w-full"
 				initial={{ opacity: 0, y: 100 }}
