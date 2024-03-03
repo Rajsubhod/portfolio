@@ -19,21 +19,21 @@ export default function About() {
 		>
 			<SectionHeading>About Me</SectionHeading>
 			<p>
-				After graduating with a degree in{' '}
-				<span className="font-medium">Accounting</span>, I decided to pursue my
-				passion for programming. I enrolled in a coding bootcamp and learned{' '}
-				<span className="font-medium">full-stack web development</span>.{' '}
+				I'm currently pursuing a degree in{' '}
+				<span className="font-medium">Computer Science & Engineering.</span>
+				<br /> I want to pursue my passion for programming following the path of
+				a <span className="font-medium">full-stack web developer</span>.{' '}
 				<span className="italic">My favorite part of programming</span> is the
 				problem-solving aspect. I <span className="underline">love</span> the
-				feeling of finally figuring out a solution to a problem. My core stack
-				is{' '}
+				feeling of finally figuring out/debugging a solution to a problem. My
+				core stack is{' '}
 				<span className="font-medium">
-					React, Next.js, Node.js, and MongoDB
+					React, Next.js, Spring boot, and MySQL
 				</span>
-				. I am also familiar with TypeScript and Prisma. I am always looking to
+				. I am also familiar with TypeScript, MongoDB. I am always looking to
 				learn new technologies. I am currently looking for a{' '}
-				<span className="font-medium">full-time position</span> as a software
-				developer.
+				<span className="font-medium">full/part-time position</span> as a
+				software developer.
 			</p>
 		</motion.section>
 	);
