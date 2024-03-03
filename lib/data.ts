@@ -2,9 +2,7 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
-import corpcommentImg from '@/public/corpcomment.png';
-import rmtdevImg from '@/public/rmtdev.png';
-// import wordanalyticsImg from '@/public/wordanalytics.png';
+import portfolioImg from '@/public/portfolio.png';
 
 export const links = [
 	{
@@ -35,59 +33,41 @@ export const links = [
 
 export const experiencesData = [
 	{
-		title: 'Graduated bootcamp',
-		location: 'Miami, FL',
+		title: 'Enrolled in University',
+		location: 'Kolkata, India',
 		description:
-			'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
+			'I am currently enrolled in a university in India. Pursuing a degree in Computer Science and Engineering. I am in my final year.',
 		icon: React.createElement(LuGraduationCap),
-		date: '2019',
-	},
-	{
-		title: 'Front-End Developer',
-		location: 'Orlando, FL',
-		description:
-			'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
-		icon: React.createElement(CgWorkAlt),
-		date: '2019 - 2021',
-	},
-	{
-		title: 'Full-Stack Developer',
-		location: 'Houston, TX',
-		description:
-			"I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-		icon: React.createElement(FaReact),
 		date: '2021 - present',
 	},
 ] as const;
 
 export const projectsData = [
 	{
-		title: 'CorpComment',
+		title: 'My portfolio',
 		description:
-			'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
-		tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
-		imageUrl: corpcommentImg,
+			'I worked on this portfolio to showcase my skills and projects. It is built with Next.js & Tailwind CSS and host on Vercel.',
+		tags: [
+			'React',
+			'Next.js',
+			'Tailwind',
+			'TypeScript',
+			'Framer Motion',
+			'Resend',
+			'formik',
+			'yup',
+		],
+		imageUrl: portfolioImg,
 	},
-	{
-		title: 'rmtDev',
-		description:
-			'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
-		tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
-		imageUrl: rmtdevImg,
-	},
-	{
-		title: 'Word Analytics',
-		description:
-			'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-		tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
-		imageUrl: '',
-	},
+	,
 ];
 
 export const skillsData = [
 	'Java',
 	'Spring',
+	'OOPs',
 	'Spring Boot',
+	'JWT',
 	'HTML',
 	'CSS',
 	'JavaScript',
@@ -98,6 +78,6 @@ export const skillsData = [
 	'Tailwind',
 	'MongoDB',
 	'Redux',
-	'PostgreSQL',
+	'MySQL',
 	'Python',
 ] as const;
