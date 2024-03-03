@@ -44,7 +44,7 @@ export const experiencesData = [
 
 export const projectsData = [
 	{
-		title: 'My portfolio',
+		title: 'My Portfolio',
 		description:
 			'I worked on this portfolio to showcase my skills and projects. It is built with Next.js & Tailwind CSS and host on Vercel.',
 		tags: [
@@ -59,7 +59,6 @@ export const projectsData = [
 		],
 		imageUrl: portfolioImg,
 	},
-	,
 ];
 
 export const skillsData = [
