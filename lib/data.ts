@@ -3,6 +3,7 @@ import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
 import portfolioImg from '@/public/portfolio.png';
+import todoNoterImg from '@/public/todoNoter.png';
 
 export const links = [
 	{
@@ -43,6 +44,13 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+	{
+		title: 'Todo Noter',
+		description:
+			'Todo Noter is a simple todo app with a note-taking feature. It is built with React & Vite and styled with Tailwind CSS & Shadcn and host on Vercel.',
+		tags: ['React', 'Tailwind', 'TypeScript', 'Vite.js', 'Shadcn'],
+		imageUrl: todoNoterImg,
+	},
 	{
 		title: 'My Portfolio',
 		description:
